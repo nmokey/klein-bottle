@@ -25,12 +25,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Amador Valley 2023-2024. 
 baseurl: "/klein-bottle" # the subpath of your site, e.g. /blog
 url: "https://nmokey.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  nmokey
+github_username: nmokey
 
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
