@@ -5,8 +5,71 @@
 layout: page
 title: hi
 ---
-# Introduction
+{% include linkedHeading.html heading="Introduction" level=1 %}
 
-# Art
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
 
-# What is Orientability, anyway?
+{% include linkedHeading.html heading="Art" level=1 %}
+
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+hi  
+{% include linkedHeading.html heading="What is Orientability, Anyway?" level=1 %}
