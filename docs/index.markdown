@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: hi
 ---
+![Homepage Banner](/assets/images/kleinbottlebanner.png){:width="90%"}
 {% include linkedHeading.html heading="Introduction" level=1 %}
 
 hi  
