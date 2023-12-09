@@ -23,8 +23,8 @@ email: ryanzheng@nmokey.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my first semester final project for Multivariable Calculus at
   Amador Valley 2023-2024. 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/klein-bottle" # the subpath of your site, e.g. /blog
+url: "https://nmokey.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  nmokey
 
 # Build settings
