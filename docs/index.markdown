@@ -12,35 +12,44 @@ For my project, I'm focusing on exploring a specific subset of topological space
 Work in progress.
 
 {% include linkedHeading.html heading = "orientability" text="what is orientability, anyway?" level=1 %}
-To understand *non-orientable manifolds*, we can break it into two pieces: defining orientability and defining manifolds. 
+To understand *non-orientable manifolds*, we can break the term into two pieces: defining orientability and defining manifolds. 
 
-In topology, a **manifold** is a topological space which that locally resembles Euclidean space near each point. Suraces are simply 2-dimensional manifolds, so when we talk about non-orientable surfaces for all intents and purposes they're basically the same thing.  
+In topology, a **manifold** is a topological space which that locally resembles Euclidean space near each point. Surfaces are simply 2-dimensional manifolds, so when we talk about non-orientable surfaces for all intents and purposes they're basically the same thing.  
 
 There are a couple ways to think of **orientability**: the formal definition is that it's a property of topological manifolds which permits a consistent sense of clockwise and counterclockwise. If you choose a direction of a normal vector and keep assigning normals along the surface, when you loop back around to your starting point the normal vector should still point in the same direction. 
 
 In popular mathematics, a surface that's **non-orientable** is usually descirbed as having onlly one side, partially because that's the most exciting way to put it.
 
 {% include linkedHeading.html heading = "klein bottle" text="the one and only klein bottle" level=1 %}
-Named after Felix Klein.  
-It's important to note that klein bottles are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they have no self-intersection. This is where the multivariable calculus comes in: we can use level surfaces to project them into 3d space and try to get a glimpse of what Klein Bottles *should* look like.  
+Named after [Felix Klein](https://en.wikipedia.org/wiki/Felix_Klein){:target="_blank"}{:rel="noopener noreferrer"} (linked in case you want to make fun of his picture).  
+
+Constructing a Klein bottle is simple. Take an open cylinder, extend one end of it and bend it around to go back through itself, and smoothly connect the ends. Did you follow along? Awesome! You now have your very own Klein bottle.  
+![anatomy](/assets/images/anatomy.png){:width="90%"}
 
 Let's list some amusing, fascinating facts about them:
 - only one side
 - zero volume (perfect for alcohol)
-- actually 4d manifolds
-- composed of two möbius strips glued together
+- actually 4d manifolds immersed in 3d
+- composed of two (mirror image) möbius strips glued together
+- Euler characteristic of 0
 
-This is where the multivariable calculus comes in. Clifford Stoll, purveyor of fine glass klein bottles, offers the following parametrization of a Klein bottle as an alternative to buying one:  
+Ok, so we understand what a Klein bottle is conceptually. It's important to note that klein bottles are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they have no self-intersection (also called a nexus). But here's an idea: what if I wanted to break my brain and use level surfaces to project them into 3d space and try to get a glimpse of what Klein Bottles *should* look like?  
 
-$$x = cos(u)*(cos(u/2)*(sqrt_2+cos(v))+(sin(u/2)*sin(v)*cos(v)))$$  
+This is where the multivariable calculus comes in. Clifford Stoll, purveyor of [fine glass Klein bottles](https://www.kleinbottle.com/){:target="_blank"}{:rel="noopener noreferrer"}, offers the following parametrization of a Klein bottle as an alternative to buying one:  
 
-$$y = sin(u)*(cos(u/2)*(sqrt_2+cos(v))+(sin(u/2)*sin(v)*cos(v)))$$  
+$$x = \cos(u)\cos(\frac{u}{2})(\sqrt{2}+\cos(v))+\sin(\frac{u}{2})\sin(v)\cos(v)$$  
 
-$$z = -1*sin(u/2)*(sqrt_2+cos(v))+cos(u/2)*sin(v)*cos(v)$$  
+$$y = \sin(u)\cos(\frac{u}{2})(\sqrt{2}+\cos(v))+\sin(\frac{u}{2})\sin(v)\cos(v)$$  
+
+$$z = -\sin(\frac{u}{2})(\sqrt{2}+\cos(v))+\cos(\frac{u}{2})\sin(v)\cos(v)$$  
+
+Of course, since this parametrization has 3 variables, it represents an immersion in $R^3$ space. There are other ways to represent an immersion, like
 
 {% include linkedHeading.html heading = "examples" text="other examples of non-orientable manifolds" level=1 %}
 ## möbius strip
-Named after August Ferdinand Möbius.
+Named after [August Ferdinand Möbius](https://en.wikipedia.org/wiki/August_Ferdinand_Möbius){:target="_blank"}{:rel="noopener noreferrer"}.  
+
+Mobius strips are essentially the 
 ## roman surface
 
 ## real projective planes
