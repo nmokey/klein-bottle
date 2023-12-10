@@ -18,12 +18,20 @@ In topology, a **manifold** is a topological space which that locally resembles 
 
 There are a couple ways to think of **orientability**: the formal definition is that it's a property of topological manifolds which permits a consistent sense of clockwise and counterclockwise. If you choose a direction of a normal vector and keep assigning normals along the surface, when you loop back around to your starting point the normal vector should still point in the same direction. 
 
+In popular mathematics, a surface that's **non-orientable** is usually descirbed as having onlly one side, partially because that's the most exciting way to put it.
+
 {% include linkedHeading.html heading = "examples" text="examples of non-orientable manifolds" level=1 %}
 ## möbius strip
 Named after August Ferdinand Möbius.
 ## klein bottle
 Named after Felix Klein.  
-It's important to note that klein bottles are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they have no self-intersection. This is where the multivariable calculus comes in: we can use level surfaces to project them into 3d space and try to get a glimpse of what Klein Bottles *should* look like.
+It's important to note that klein bottles are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they have no self-intersection. This is where the multivariable calculus comes in: we can use level surfaces to project them into 3d space and try to get a glimpse of what Klein Bottles *should* look like.  
+
+Let's list some amusing, fascinating facts about them:
+- only one side
+- zero volume (perfect for alcohol)
+- actually 4d manifolds
+
 ## roman surface
 
 ## real projective planes
