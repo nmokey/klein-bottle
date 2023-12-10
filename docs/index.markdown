@@ -4,9 +4,9 @@ layout: default
 ![Homepage Banner](/assets/images/kleinbottlebanner.png){:width="90%"}
 
 {% include linkedHeading.html heading="introduction" text="introduction" level=1 %}
-This site is part of my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}.  
+This site is part of my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. 
 
-For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. 
+For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus.  
 
 {% include linkedHeading.html heading="artwork" text = "artwork" level=1 %}
 Work in progress.
@@ -20,10 +20,7 @@ There are a couple ways to think of **orientability**: the formal definition is 
 
 In popular mathematics, a surface that's **non-orientable** is usually descirbed as having onlly one side, partially because that's the most exciting way to put it.
 
-{% include linkedHeading.html heading = "examples" text="examples of non-orientable manifolds" level=1 %}
-## möbius strip
-Named after August Ferdinand Möbius.
-## klein bottle
+{% include linkedHeading.html heading = "klein bottle" text="the one and only klein bottle" level=1 %}
 Named after Felix Klein.  
 It's important to note that klein bottles are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they have no self-intersection. This is where the multivariable calculus comes in: we can use level surfaces to project them into 3d space and try to get a glimpse of what Klein Bottles *should* look like.  
 
@@ -31,13 +28,41 @@ Let's list some amusing, fascinating facts about them:
 - only one side
 - zero volume (perfect for alcohol)
 - actually 4d manifolds
+- composed of two möbius strips glued together
 
+This is where the multivariable calculus comes in. Clifford Stoll, purveyor of fine glass klein bottles, offers the following parametrization of a Klein bottle as an alternative to buying one:  
+
+$$x = cos(u)*(cos(u/2)*(sqrt_2+cos(v))+(sin(u/2)*sin(v)*cos(v)))$$  
+
+$$y = sin(u)*(cos(u/2)*(sqrt_2+cos(v))+(sin(u/2)*sin(v)*cos(v)))$$  
+
+$$z = -1*sin(u/2)*(sqrt_2+cos(v))+cos(u/2)*sin(v)*cos(v)$$  
+
+{% include linkedHeading.html heading = "examples" text="other examples of non-orientable manifolds" level=1 %}
+## möbius strip
+Named after August Ferdinand Möbius.
 ## roman surface
 
 ## real projective planes
 {% include linkedHeading.html heading="applications" text="applications of non-orientable manifolds" level=1 %}
+Since topology is a field so deep in pure mathetmatics, it's hard to find actually useful applications of a topic so niche and abstract as non-orientable surfaces, so I'm stretching the meaning of "applications" a little bit to include anywhere non-orinetable surfaces pop up in real life, not necessarily applied in any useful way.
+- google drive
+- recycling symbol
+- cutting bagels
+- bacon loops
+- pasta (goes well with fractal broccoli)
+- scarves and hats
+- mobius bench
+- industrial belts
+- mobius resistors
+- bach's 5th canon
 
 {% include linkedHeading.html heading="why" text="what's the point?" level=1 %}
 There are certain topics that are so intrinsically fascinating that you can’t rest until you find out more. The only way I can describe it is the sort of feeling that you get when you learn for the first time that a Mobius strip - or in my case, a Klein bottle - is nonorientable, essentially meaning that it has only one side (a pretty high level explanation). You sort of think to yourself well, that doesn’t sound right. You look at one and start tracing it in the air with your finger, slowly realizing *holy crap, this thing actually does only have one side… how? why?* I think that this sense of awe is universal and everyone has their own topics that elicit that feeling. For me, Klein bottles and the whole concept of non-orientability have been a continuous fascination for me. so I’m excited for the opportunity to share why I think it’s interesting. Nonorientable surfaces in particular are relatively far from applied math, and so my why for choosing to explore them in further depth does not lie in any sort of external use but rather that intrinsic curiosity. 
 
 {% include linkedHeading.html heading="references" text="references" level=1 %}
+Ferréol, Robert. “Klein Bottle.” *Klein Bottle*, 2017, mathcurve.com/surfaces.gb/klein/klein.shtml. 
+
+Stoll, Clifford. “What Is a Klein Bottle?” *What Is a Klein Bottle?*, Acme Klein Bottle, Dec. 2021, www.kleinbottle.com/whats_a_klein_bottle.htm. 
+
+Lots of Wikipedia
