@@ -18,7 +18,7 @@ In topology, a **manifold** is a topological space which that locally resembles 
 
 There are a couple ways to think of **orientability**: the formal definition is that it's a property of topological manifolds which permits a consistent sense of clockwise and counterclockwise. If you choose a direction of a normal vector and keep assigning normals along the surface, when you loop back around to your starting point the normal vector should still point in the same direction. 
 
-In popular mathematics, a surface that's **non-orientable** is usually descirbed as having onlly one side, partially because that's the most exciting way to put it.
+In popular mathematics, a surface that's **non-orientable** is usually described as having only one side, partially because that's the most exciting way to put it. You can imagine an ant walking along the surface of a Klein bottle: starting on the "outside", the ant can crawl through the tube and onto the opposite side of its starting point without ever crossing a boundary or edge, which means that the surface only has one side, and no "inside" or "outside." That's pretty neat! The formal definition is basically the opposite of orientability: it's a property of a surface where you can't consistently define clockwise and counterclockwise. 
 
 {% include linkedHeading.html heading = "klein bottle" text="the one and only klein bottle" level=1 %}
 Named after [Felix Klein](https://en.wikipedia.org/wiki/Felix_Klein){:target="_blank"}{:rel="noopener noreferrer"} (linked in case you want to make fun of his picture).  
@@ -32,6 +32,7 @@ Let's list some amusing, fascinating facts about them:
 - actually 4d manifolds immersed in 3d
 - composed of two (mirror image) möbius strips glued together
 - Euler characteristic of 0
+- genus of 1
 
 Ok, so we understand what a Klein bottle is conceptually. It's important to note that klein bottles are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they have no self-intersection (also called a nexus). But here's an idea: what if I wanted to break my brain and use level surfaces to project them into 3d space and try to get a glimpse of what Klein Bottles *should* look like?  
 
@@ -53,9 +54,11 @@ Mobius strips are essentially the
 ## roman surface
 
 ## real projective planes
+A Mobius strip is a punctured projective plane, and since a Klein bottle is two Mobius strips glued together, it follows that a Klein bottle is the connected sum of 2 real projective planes.
+
 {% include linkedHeading.html heading="applications" text="applications of non-orientable manifolds" level=1 %}
 Since topology is a field so deep in pure mathetmatics, it's hard to find actually useful applications of a topic so niche and abstract as non-orientable surfaces, so I'm stretching the meaning of "applications" a little bit to include anywhere non-orinetable surfaces pop up in real life, not necessarily applied in any useful way.
-- google drive
+- google drive logo
 - recycling symbol
 - cutting bagels
 - bacon loops
@@ -67,7 +70,11 @@ Since topology is a field so deep in pure mathetmatics, it's hard to find actual
 - bach's 5th canon
 
 {% include linkedHeading.html heading="why" text="what's the point?" level=1 %}
-There are certain topics that are so intrinsically fascinating that you can’t rest until you find out more. The only way I can describe it is the sort of feeling that you get when you learn for the first time that a Mobius strip - or in my case, a Klein bottle - is nonorientable, essentially meaning that it has only one side (a pretty high level explanation). You sort of think to yourself well, that doesn’t sound right. You look at one and start tracing it in the air with your finger, slowly realizing *holy crap, this thing actually does only have one side… how? why?* I think that this sense of awe is universal and everyone has their own topics that elicit that feeling. For me, Klein bottles and the whole concept of non-orientability have been a continuous fascination for me. so I’m excited for the opportunity to share why I think it’s interesting. Nonorientable surfaces in particular are relatively far from applied math, and so my why for choosing to explore them in further depth does not lie in any sort of external use but rather that intrinsic curiosity. 
+There are certain topics that are so intrinsically fascinating that you can’t rest until you find out more. The only way I can describe it is the sort of feeling that you get when you learn for the first time that a Mobius strip - or in my case, a Klein bottle - is nonorientable, essentially meaning that it has only one side (a pretty high level explanation). You sort of think to yourself well, that doesn’t sound right. You look at one and start tracing it in the air with your finger, slowly realizing *holy crap, this thing actually does only have one side… how? why?*  
+
+I think that this sense of awe is universal and everyone has their own topics that elicit that feeling. For me, Klein bottles and the whole concept of non-orientability have been a continuous fascination. so I’m excited for the opportunity to share why I think it’s interesting. Nonorientable surfaces in particular are relatively far from applied math, and so my why for choosing to explore them in further depth does not lie in any sort of external use but rather that intrinsic curiosity.  
+
+*This explanation for why I care about Klein bottles was copy-pasted verbatim from my project proposal.*  
 
 {% include linkedHeading.html heading="references" text="references" level=1 %}
 Ferréol, Robert. “Klein Bottle.” *Klein Bottle*, 2017, mathcurve.com/surfaces.gb/klein/klein.shtml. 
