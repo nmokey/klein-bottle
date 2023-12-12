@@ -4,17 +4,18 @@ layout: default
 ![Homepage Banner](/assets/images/kleinbottlebanner.png){:width="90%"}
 
 {% include linkedHeading.html heading="introduction" text="introduction" level=1 %}
-This site is part of my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. 
+This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. 
 
-For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* right. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds and topology topics. 
+For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. 
 
 {% include linkedHeading.html heading="artwork" text = "artwork" level=1 %}
-Work in progress.
+Work in progress.  
+*To Mrs. Reyes: for the product of my project, I'm submitting this fully-fledged website instead due to time pressure, although I will still complete the artwork because I think it'd be fun to submit to SHSPMC. It's just not part of the scope of my final anymore.*
 
 {% include linkedHeading.html heading = "orientability" text="what is orientability, anyway?" level=1 %}
-To understand **non-orientable manifolds**, we can break the term into two pieces: defining *orientability* and defining *manifolds*. (Unfortunately this strategy doesn't mecessarily work for all math concepts, like "*hairy ball theorem*" and "*space curve*.")
+To understand **non-orientable manifolds**, we can break the term into two pieces: defining *orientability* and defining *manifolds*. (Sadly this strategy doesn't necessarily work for all math concepts, like the "*hairy ball theorem*" and "*space curves*.")
 
-In topology, a **manifold** is a topological space which locally resembles Euclidean space near each point. Surfaces are simply 2-dimensional manifolds, so when we talk about non-orientable surfaces for all intents and purposes they're basically the same thing. An $n$-manifold is simply a thing that lives in $n$-dimensional Euclidian space (it's more nuanced than this, but it's close enough).   
+In topology, a **manifold** is a topological space which locally resembles Euclidean space near each point, meaning that no matter how far you zoom in to a point, the neighborhood of that point still looks like $n$-dimensional space. **Surfaces** are simply 2-dimensional manifolds, so for this project when we talk about non-orientable manifolds/surfaces for all intents and purposes they're basically the same thing. An $n$-manifold is simply a thing that lives in $n$-dimensional Euclidian space (it's more nuanced than this, but it's close enough).   
 
 ![orientable surfaces](/assets/images/orientable.png){:width="80%"}
 
@@ -22,14 +23,14 @@ There are a couple ways to think of **orientability**: the formal definition is 
 
 *Side note: orientability is also a concept for curves. **Curve orientation** is simply the choice of which direction you travel along the curve. For example, the x-axis pointing right and y-axis pointing up are technically orientations. Closed curves can either be positively/counterclockwise oriented or negatively/clockwise oriented.*
 
-In popular mathematics, a surface that's **non-orientable** is usually described as having only one side, partially because that's the most exciting way to put it. You can imagine an ant walking along the surface of a Klein bottle: starting on the "outside", the ant can crawl through the tube and onto the opposite side of its starting point without ever crossing a boundary or edge, which means that the surface only has one side, and no "inside" or "outside." That's pretty neat! The formal definition is basically the opposite of orientability: it's a property of a surface where you can't consistently define clockwise and counterclockwise.  
+In popular mathematics, a surface that's **non-orientable** is usually described as having only one side, probably because that's the most exciting way to introduce the concept. You can imagine an ant walking along the surface of a Klein bottle: starting on the "outside", the ant can crawl through the tube and onto the opposite side of its starting point without ever crossing a boundary or edge, which means that the surface only has one side, and no "inside" or "outside." That's pretty neat! The formal definition is basically the opposite of orientability: it's a property of a surface where you can't consistently define clockwise and counterclockwise.  
 
 On a non-orientable surface, you can't integrate vector fields (e.g. surface integrals, line integrals) because you can't reconcile the inconsistent surface normals. You can still take multiple integrals and things like that, to find volumes.
 
 {% include linkedHeading.html heading = "klein bottle" text="the one and only klein bottle" level=1 %}
-Named after [Felix Klein](https://en.wikipedia.org/wiki/Felix_Klein){:target="_blank"}{:rel="noopener noreferrer"}, who imagined it in 1882 (linked in case you want to make fun of his picture).  
+Named after [Felix Klein](https://en.wikipedia.org/wiki/Felix_Klein){:target="_blank"}{:rel="noopener noreferrer"}, who described it in 1882 (linked in case you want to make fun of his picture).  
 
-Constructing a Klein bottle is simple. Take an open cylinder, extend one end of it and bend it around to go back through itself, and smoothly connect the ends. Did you follow along? Awesome! You now have your very own Klein bottle.  
+Constructing a Klein bottle is simple - it's just 3 steps. Take an open cylinder, extend one end of it and bend it around to go back through itself, and smoothly connect the ends. Did you follow along? Awesome! You now have your very own Klein bottle.  
 ![anatomy](/assets/images/anatomy.png){:width="90%"}
 
 Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
@@ -42,7 +43,7 @@ Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
 - Euler characteristic of 0, given by vertices - edges + faces
 - genus of 1, loosely meaning it has one hole
 
-Ok, so we understand what a Klein bottle is conceptually. The nice thing about topology is that it doesn't matter how we bend or stretch our surfaces, they still retain the same properties. But what if we wanted to take a look at some equations that can give us an idea of what "version" of a Klein bottle we're actually seeing?
+Ok, so we understand what a Klein bottle is conceptually. The nice thing about topology is that it doesn't matter how we bend, stretch, or twist our surfaces (known as *continuous deformations*), they still retain the same properties - this is why a coffee mug is topologically equivalent to a donut. We just can't tear, glue, open/close holes in them or pass them through themselves. But what if we wanted to take a look at some equations that can give us an idea of what "version" of a Klein bottle we're actually seeing?
 
 This is where the multivariable calculus comes in. Clifford Stoll, topologist and purveyor of [fine glass Klein bottles](https://www.kleinbottle.com/){:target="_blank"}{:rel="noopener noreferrer"}, offers the [following parametrization](https://www.desmos.com/3d/a0c3f74c53){:target="_blank"}{:rel="noopener noreferrer"} of a Klein bottle as an alternative to buying one:  
 
@@ -52,15 +53,20 @@ $$y(u,v) = \sin(u)\cos(\frac{u}{2})(\sqrt{2}+\cos(v))+\sin(\frac{u}{2})\sin(v)\c
 
 $$z(u,v) = -\sin(\frac{u}{2})(\sqrt{2}+\cos(v))+\cos(\frac{u}{2})\sin(v)\cos(v)$$  
 
-It's important to note that Klein bottles are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they have no self-intersection (also called a nexus). But here's an idea: what if I wanted to break my brain and consider parametrizations of 4d Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space. All the Klein bottles that we're able to see and visualize are immersions in 3d space. A *true* Klein bottle needs 4 dimensions so that it Besides this one, there are two other common immersions of the manifold: the left-handed and right-handed figure-8 immersions, which are *chiral*.
+Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space. This particular immersion of a Klein bottle is pretty ugly. There are 3 common forms a Klein bottle takes in $\mathbb{R}^3$: the classic "bottle" shape, the right-handed and left-handed figure-8 immersions (which are *chiral*), and a pinched torus.  
 
-You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. 
+You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. This is common when writing equations to describe topological spaces, since they're so strange looking.  
+
+It's important to note that all the Klein bottles we see are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they need 4 dimensions so that it can pass through itself without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4d parametrizations of Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? Let's use the pinched torus immersions, since they are simplest.  
+
 
 {% include linkedHeading.html heading = "examples" text="other examples of non-orientable manifolds" level=1 %}
 ## möbius strip
 Named after [August Ferdinand Möbius](https://en.wikipedia.org/wiki/August_Ferdinand_Möbius){:target="_blank"}{:rel="noopener noreferrer"}, who discovered it as a mathematical object in 1858, although the shape appeared as early as the 3rd century in Roman mosaics.  
 
-The Möbius strip is probably the most well-known non-orientable surface, since it's much easier to implement in architecture and whatnot than Klein bottles. Möbius strips are essentially Klein bottles 1 dimension down: if you cut a Klein bottle in half (if for some reason you'd deface such a beautiful surface), you'd get two mirror-image Möbius strips: a left-handed one and a right-handed one. You can easily make one yourself by taking a strip of paper, half-twisting it, and gluing the ends together. In differential gemoetry, you construct one by taking the space swept out by a line segment rotating in a plane that is also rotating. This is given by the [following parametrization](https://www.desmos.com/3d/ebeac4bd6e){:target="_blank"}{:rel="noopener noreferrer"}:
+The Möbius strip is probably the most well-known non-orientable surface, since it's much easier to implement in architecture and whatnot than Klein bottles. Möbius strips are essentially Klein bottles 1 dimension down: if you cut a Klein bottle in half (if for some reason you'd deface such a beautiful surface), you'd get two mirror-image Möbius strips: a left-handed one and a right-handed one. You can easily make one yourself by taking a strip of paper, half-twisting it, and taping the ends together.  
+
+In differential geometry, you construct one by taking the space swept out by a line segment rotating in a plane that is also rotating. This is given by the [following parametrization](https://www.desmos.com/3d/ebeac4bd6e){:target="_blank"}{:rel="noopener noreferrer"}:
 
 $$x(u,v) = (1+\frac{v}{2}\cos{\frac{u}{2}})\cos{u}$$
 
