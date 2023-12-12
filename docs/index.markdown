@@ -53,18 +53,23 @@ $$y(u,v) = \sin(u)\cos(\frac{u}{2})(\sqrt{2}+\cos(v))+\sin(\frac{u}{2})\sin(v)\c
 
 $$z(u,v) = -\sin(\frac{u}{2})(\sqrt{2}+\cos(v))+\cos(\frac{u}{2})\sin(v)\cos(v)$$  
 
-Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space. This particular immersion of a Klein bottle is pretty ugly. There are 3 common forms a Klein bottle takes in $\mathbb{R}^3$: the classic "bottle" shape, the right-handed and left-handed figure-8 immersions (which are *chiral*), and a pinched torus.  
+Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space. If this sounds confusing, a good way to think about it is a photograph of a cup is a 2D representation of a 3D cup that's been flattened. In the same way, we're representing the Klein bottle one dimension down so it can exist in our universe which, alas, has only 3 spatial dimensions. This particular immersion of a Klein bottle is pretty ugly. There are 3 common forms a Klein bottle takes in $\mathbb{R}^3$: the classic "bottle" shape, the right-handed and left-handed figure-8 immersions (which are *chiral*), and a pinched torus.  
 
-You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. This is common when writing equations to describe topological spaces, since they're so strange looking.  
+You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. This is common when writing equations to describe topological spaces, since they're so strange looking. You're probably pretty familiar with this concept: $u$ substitution for integration and differentiation are examples of change of variables.  
 
-It's important to note that all the Klein bottles we see are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they need 4 dimensions so that it can pass through itself without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4d parametrizations of Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? Let's use the pinched torus immersions, since they are simplest.  
+It's important to note that all the Klein bottles we see are 4d manifolds immersed in 3d space so we can visualize them: in their "true form," they need 4 dimensions so that it can pass through itself without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4d parametrizations of Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? Let's use the figure-8 immersions, because they're cool.  
 
+![figure 8 bottle](/assets/images/figure8.png){:width="25%"}
+
+First, the equation of the  
+
+All this is to say, when we see a Klein bottle we're viewing a representation of a manifold we can't fully comprehend. 
 
 {% include linkedHeading.html heading = "examples" text="other examples of non-orientable manifolds" level=1 %}
 ## möbius strip
 Named after [August Ferdinand Möbius](https://en.wikipedia.org/wiki/August_Ferdinand_Möbius){:target="_blank"}{:rel="noopener noreferrer"}, who discovered it as a mathematical object in 1858, although the shape appeared as early as the 3rd century in Roman mosaics.  
 
-The Möbius strip is probably the most well-known non-orientable surface, since it's much easier to implement in architecture and whatnot than Klein bottles. Möbius strips are essentially Klein bottles 1 dimension down: if you cut a Klein bottle in half (if for some reason you'd deface such a beautiful surface), you'd get two mirror-image Möbius strips: a left-handed one and a right-handed one. You can easily make one yourself by taking a strip of paper, half-twisting it, and taping the ends together.  
+The Möbius strip is probably the most well-known non-orientable surface, since it's much easier to implement in architecture and whatnot than Klein bottles. Möbius strips are essentially Klein bottles 1 dimension down: if you cut a Klein bottle in half (if for some reason you'd deface such a beautiful surface), you'd get two mirror-image Möbius strips: a left-handed one and a right-handed one. You can easily make one yourself by taking a strip of paper, half-twisting it, and taping the ends together. Interestingly enough, if you cut along the centerline of a Möbius strip, you end up with a perfectly orientable double-length two-sided strip.   
 
 In differential geometry, you construct one by taking the space swept out by a line segment rotating in a plane that is also rotating. This is given by the [following parametrization](https://www.desmos.com/3d/ebeac4bd6e){:target="_blank"}{:rel="noopener noreferrer"}:
 
@@ -74,26 +79,38 @@ $$y(u,v) = (1+\frac{v}{2}\cos{\frac{u}{2}})\sin{u}$$
 
 $$z(u,v) = \frac{v}{2}\sin{\frac{u}{2}}$$
 
-for $0 \le u \le 2\pi$ and $-1\le v \le 1$, where $u$ is the rotation angle of the plane and $v$ is the position of a point along the rotating line segment.
-## roman surface
+for $0 \le u \le 2\pi$ and $-1\le v \le 1$, where $u$ is the rotation angle of the plane and $v$ is the position of a point along the rotating line segment. This is another example of a change of variables.
 
-## real projective planes
+## real projective plane
+The real projective plane 
 A Möbius strip is a punctured projective plane, and since a Klein bottle is two Möbius strips glued together, it follows that a Klein bottle is the connected sum of 2 real projective planes.
+
+## roman surface
+The Roman surface, or Steiner surface, is a self-intersecting mapping (not an immersion) of the real projective plane into $\mathbb{R}^3$ space. It's made up of "bulbous lobes," and can simply be constructed as a sphere under the map $f(x,y,z) = (yz,xz,xy)$:
+
+$$x^2y^2+y^2z^2+z^2x^2-r^2xyz=0$$
+
+Another way to construct it, which is more relevant to multi, is by gluing together 3 hyperbolic paraboloids and connecting the edges. 
+
+![roman surface](/assets/images/romansurface.svg){:width="40%"}
 
 {% include linkedHeading.html heading="applications" text="\"applications\" of non-orientable manifolds" level=1 %}
 Since topology is a field so deep in pure mathematics, it's hard to find actually useful applications of a topic so niche and abstract as non-orientable surfaces, so I'm stretching the meaning of "applications" a little bit to include anywhere non-orinetable surfaces pop up in real life, not necessarily applied in any useful way.
 
 Due to their highly recognizable form, Möbius strips in particular have become popular in graphic design and architecture, but there are also some practical uses. Here's a list:
-- google drive logo
+- Google Drive logo
 - recycling symbol
-- cutting bagels
+- [cutting bagels](https://www.npr.org/sections/thesalt/2015/08/06/429437860/cut-your-bagel-the-mathematically-correct-way){:target="_blank"}{:rel="noopener noreferrer"}
 - bacon loops
 - pasta (goes well with fractal broccoli)
-- scarves and hats
-- mobius bench
+- [scarves and hats](https://www.kleinbottle.com/klein_bottle_hats.htm){:target="_blank"}{:rel="noopener noreferrer"}
+- [mobius bench](https://pierrerenart.com/en/oeuvre/mobius-bench/){:target="_blank"}{:rel="noopener noreferrer"}
 - industrial belts (to wear evenly on "both" sides)
-- mobius resistors
-- bach's 5th canon
+- trihexaflexagons
+- dual-track roller coasters
+- The Möbius resistors, a strip of conductive material covering the single side of a dielectric Möbius strip, in a way that cancels its own self-inductance.
+ 
+- Bach's 5th Canon
 
 {% include linkedHeading.html heading="why" text="what's the point?" level=1 %}
 There are certain topics that are so intrinsically fascinating that you can’t rest until you find out more. The only way I can describe it is the sort of feeling that you get when you learn for the first time that a Mobius strip - or in my case, a Klein bottle - is nonorientable, essentially meaning that it has only one side (a pretty high level explanation). You sort of think to yourself well, that doesn’t sound right. You look at one and start tracing it in the air with your finger, slowly realizing *holy crap, this thing actually does only have one side… how? why?*  
@@ -106,12 +123,12 @@ I think that this sense of awe is universal and everyone has their own topics th
 Alling, Norman, and Newcomb Greenleaf. “Klein Surfaces and Real Algebraic Function Fields.” *Bulletin of the American  
 &emsp;&emsp;&emsp;&emsp;Mathematical Society*, vol. 75, no. 2, 21 Feb. 1969, pp. 869–872, https://doi.org/10.1090/bull/1969-75-02. 
 
+Coffman, Adam. "Steiner Roman Surfaces". *National Curve Bank*. Indiana University - Purdue University Fort Wayne,  
+&emsp;&emsp;&emsp;&emsp; http://old.nationalcurvebank.org/romansurfaces/romansurfaces.htm.
+
 Ferréol, Robert. “Klein Bottle.” *Klein Bottle*, 2017, mathcurve.com/surfaces.gb/klein/klein.shtml. 
 
 Munroe, Marshall Evans. “Multiple Integrals - Oriented Manifolds.” *Modern Multidimensional Calculus*, Reprint ed.,  
 &emsp;&emsp;&emsp;&emsp;Dover Publications, Inc, Mineola, New York, 2019, pp. 263–268. 
 
-Stoll, Clifford. “What Is a Klein Bottle?” *What Is a Klein Bottle?*, Acme Klein Bottle, Dec. 2021,  
-&emsp;&emsp;&emsp;&emsp;www.kleinbottle.com/whats_a_klein_bottle.htm. 
-
-Lots of Wikipedia
+Stoll, Clifford. “What Is a Klein Bottle?” *Acme Klein Bottle*, Dec. 2021, www.kleinbottle.com/whats_a_klein_bottle.htm. 
