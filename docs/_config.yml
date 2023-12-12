@@ -27,7 +27,7 @@ description: >-
 footerDescription: >- 
   This site, along with all images and artwork, were hastily cobbled together 
   from scratch in the last 4 days before the deadline. I would like to thank
-  caffiene, StackOverflow, my Wacom tablet, and Mrs. Reyes for indulging my 
+  Wikipedia, StackOverflow, my Wacom tablet, and Mrs. Reyes for indulging my 
   unreasonable fascination with Klein bottles.
 baseurl: "/klein-bottle" # the subpath of your site, e.g. /blog
 url: "https://nmokey.com" # the base hostname & protocol for your site, e.g. http://example.com
