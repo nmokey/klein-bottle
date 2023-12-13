@@ -62,9 +62,11 @@ Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
 
 Those first three are the most well-known properties, so let's break them down. If you have two pieces of paper and connect them, the edges that have been joined are "lost". So what if we do the same with Möbius strips? Well, each strip has one edge, so if we connect them, both should be lost: we end up with a surface that has no edges - the Klein bottle. Neat! The Klein bottle also has zero volume because it does not doesn't separate the universe into two parts.
 
-Yet another way to define one: The solid Klein bottle is the non-orientable version of a solid torus. The Klein bottle's fundamental polygon is given below.  
+Yet another, more generalized and abstract way to define one: The solid Klein bottle is the non-orientable version of a solid torus. The Klein bottle's fundamental polygon is given below.  
 
 ![polygons](/assets/images/polygons.png){:width="90%"}
+
+The way the opposite arrows are flipped for the non-orientable mirrors what we said earlier: if you take an image and traverse it across the surface, it will come back reversed.
 
 Ok, so we understand what a Klein bottle is conceptually. The nice thing about topology is that it doesn't matter how we bend, stretch, or twist our surfaces (known as *continuous deformations*), they still retain the same properties - this is why a coffee mug is topologically equivalent to a donut. We just can't tear, glue, open/close holes in them or pass them through themselves. But what if we wanted to take away this freedom and look at some equations that can give us an idea of what "version" of a Klein bottle we're actually seeing?
 
@@ -184,6 +186,9 @@ Abraham Goetz (1970) *Introduction to Differential Geometry*, page 28, Addison W
 Alling, Norman, and Newcomb Greenleaf. “Klein Surfaces and Real Algebraic Function Fields.” *Bulletin of the American  
 &emsp;&emsp;&emsp;&emsp;Mathematical Society*, vol. 75, no. 2, 21 Feb. 1969, pp. 869–872, https://doi.org/10.1090/bull/1969-75-02. 
 
+Breen, Casey. “The Classification of Surfaces.” *University of Chicago Mathematics REU*, May 2017,  
+&emsp;&emsp;&emsp;&emsp;http://math.uchicago.edu/~may/REU2017/REUPapers/Breen-Edelstein.pdf. 
+
 Chen, Si, et al. “Quantizing models of (2+1)-dimensional gravity on non-orientable manifolds.” *Classical and Quantum Gravity*,  
 &emsp;&emsp;&emsp;&emsp;vol. 31, no. 5, 14 Feb. 2014, https://doi.org/10.1088/0264-9381/31/5/055008. 
 
@@ -196,6 +201,8 @@ David Darling (11 August 2004). *The Universal Book of Mathematics: From Abracad
 “Electronics: Making Resistors with Math.” *Time*, 25 Sept. 1964. 
 
 Ferréol, Robert. “Klein Bottle.” *Klein Bottle*, 2017, mathcurve.com/surfaces.gb/klein/klein.shtml. 
+
+Freiberger, Marianne. “Introducing the Klein Bottle.” *Plus Maths*, 6 Jan. 2015, plus.maths.org/content/introducing-klein-bottle. 
 
 Junghenn, Hugo D. (2015). *A Course in Real Analysis*. Boca Raton, Florida: CRC Press. p. 430. ISBN 978-1-4822-1927-2. MR 3309241.
 
