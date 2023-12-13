@@ -41,7 +41,7 @@ Named after [Felix Klein](https://en.wikipedia.org/wiki/Felix_Klein){:target="_b
 Constructing a Klein bottle is simple - it's just 3 steps. Take an open cylinder, extend one end of it and bend it around to go back through itself, and smoothly connect the ends. Did you follow along? Awesome! You now have your very own Klein bottle.  
 ![anatomy](/assets/images/anatomy.png){:width="90%"}
 
-Alternatively, a Klein bottle can be constructed via the sophisticated mathematical technique of taking two Möbius loops and gluing them together. As Leo Moser puts it:  
+Alternatively, a Klein bottle can be constructed via the sophisticated, rigorous mathematical technique of taking two Möbius loops and gluing them together. As Leo Moser puts it:  
 
 &emsp;&emsp;&emsp;&emsp;A mathematician named Klein  
 &emsp;&emsp;&emsp;&emsp;Thought the Möbius band was divine.  
@@ -60,11 +60,15 @@ Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
 - Euler characteristic of 0, given by vertices - edges + faces
 - genus of 1, loosely meaning it has one hole
 
-Those first three are the most well-known properties, so let's break them down. If you have two pieces of paper and connect them, the edges that have been joined are lost. So what if we do the same with Möbius strips? Well, each strip has one edge, so if we connect them, both should be lost: we end up with a surface that has no edges: the Klein bottle. Neat! The Klein bottle also has zero volume because it does not doesn't separate the universe into two parts.
+Those first three are the most well-known properties, so let's break them down. If you have two pieces of paper and connect them, the edges that have been joined are "lost". So what if we do the same with Möbius strips? Well, each strip has one edge, so if we connect them, both should be lost: we end up with a surface that has no edges - the Klein bottle. Neat! The Klein bottle also has zero volume because it does not doesn't separate the universe into two parts.
+
+Yet another way to define one: The solid Klein bottle is the non-orientable version of a solid torus. The Klein bottle's fundamental polygon is given below.  
+
+![polygons](/assets/images/polygons.png){:width="90%"}
 
 Ok, so we understand what a Klein bottle is conceptually. The nice thing about topology is that it doesn't matter how we bend, stretch, or twist our surfaces (known as *continuous deformations*), they still retain the same properties - this is why a coffee mug is topologically equivalent to a donut. We just can't tear, glue, open/close holes in them or pass them through themselves. But what if we wanted to take away this freedom and look at some equations that can give us an idea of what "version" of a Klein bottle we're actually seeing?
 
-This is where the multivariable calculus comes in. Clifford Stoll, topologist and purveyor of [fine glass Klein bottles](https://www.kleinbottle.com/){:target="_blank"}{:rel="noopener noreferrer"}, offers the [following parametrization](https://www.desmos.com/3d/a0c3f74c53){:target="_blank"}{:rel="noopener noreferrer"} of a Klein bottle as an alternative to buying one:  
+This is where the multivariable calculus comes in. Clifford Stoll, topologist and purveyor of [fine glass Klein bottles](https://www.kleinbottle.com/){:target="_blank"}{:rel="noopener noreferrer"}, offers the [following parametrization](https://www.desmos.com/3d/664c4f0f0f){:target="_blank"}{:rel="noopener noreferrer"} of a Klein bottle as an alternative to buying one:  
 
 $$x(u,v) = \cos{u}\cos\frac{u}{2}(\sqrt{2}+\cos{v})+\sin\frac{u}{2}\sin{v}\cos{v}$$  
 
@@ -72,17 +76,15 @@ $$y(u,v) = \sin{u}\cos\frac{u}{2}(\sqrt{2}+\cos{v})+\sin\frac{u}{2}\sin{v}\cos{v
 
 $$z(u,v) = -\sin{\frac{u}{2}}(\sqrt{2}+\cos{v})+\cos\frac{u}{2}\sin{v}\cos{v}$$  
 
-Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space. If this sounds confusing, a good way to think about it is a photograph of a cup is a 2D representation of a 3D cup that's been flattened: it's been *immersed* in 2D space. In the same way, we're representing the Klein bottle one dimension down so it can exist in our universe which, alas, has only 3 spatial dimensions. This particular immersion of a Klein bottle is pretty ugly, but that's okay, because there are many others. There are 3 common forms a Klein bottle takes in $\mathbb{R}^3$: the classic "bottle" shape, the right-handed and left-handed figure-8 immersions (which are *chiral*), and a pinched torus.  
+Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space, not an **embedding**. If this sounds confusing, a good way to think about it is a photograph of a penguin is a 2D representation of a 3D penguin that's been flattened: it's been *immersed* in 2D space. In the same way, we're taking a "photograph" of the Klein bottle one dimension down so it can exist in our universe which, alas, has only 3 spatial dimensions. The difference between an embedding and an immersion is that immersions allow self-intersections, but neither can have folds or cusps.
+
+This particular immersion of a Klein bottle is pretty ugly, but that's okay, because there are many others. There are 3 common forms a Klein bottle takes in $\mathbb{R}^3$: the classic "bottle" shape, the right-handed and left-handed figure-8 immersions (which are *chiral*), and a pinched torus.  
 
 DRAWING OF KLEIN BOTTLE "FLAVORS"  
 
 You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. You're probably pretty familiar with this general concept: $u$ substitution for integration and differentiation are examples of change of variables. Some other useful changes in variables include transformations into polar coordinates for 2d and cylindrical or spherical coordinates for 3d. This is common when writing equations to describe topological spaces, since they're so strange looking, and usually composed of surfaces of revolution.   
 
 DRAWING OF A DOMAIN BEING REMAPPED IN CHANGE OF VARIABLES
-
-The solid klein bottle is the non-orientable version of a solid torus. The Klein bottle's fundamental polygon is given below.  
-
-DRAWING OF FUNDAMENTAL POLYGONS
 
 It's important to note that all the Klein bottles we see are 2d manifolds immersed in 3d space so we can visualize them: in their "true form," they need to live in 4 dimensions so that it can pass through itself without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4d parametrizations of Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? 
 
@@ -138,7 +140,7 @@ The real projective plane is a compact non-orientable 2D manifold with Euler cha
 A Möbius strip is a punctured projective plane, and since a Klein bottle is two Möbius strips glued together, it follows that a Klein bottle is the connected sum of 2 real projective planes.
 
 ## roman surface
-The Roman surface, or Steiner surface, is a self-intersecting mapping (not an immersion) of the real projective plane into $\mathbb{R}^3$ space. It's made up of "bulbous lobes," and can simply be constructed as a sphere under the map $f(x,y,z) = (yz,xz,xy)$:
+The Roman surface, or Steiner surface, is a [self-intersecting mapping](https://www.desmos.com/3d/2f51137a1b){:target="_blank"}{:rel="noopener noreferrer"} (not an immersion) of the real projective plane into $\mathbb{R}^3$ space. It's made up of "bulbous lobes," and can simply be constructed as a sphere under the map $f(x,y,z) = (yz,xz,xy)$:
 
 $$x^2y^2+y^2z^2+z^2x^2-r^2xyz=0$$
 
@@ -147,7 +149,7 @@ Another way to construct it, which is more relevant to multi, is by gluing toget
 ![roman surface](/assets/images/romansurface.svg){:width="40%"}
 
 {% include linkedHeading.html heading="applications" text="\"applications\" of non-orientable manifolds" level=1 %}
-Since topology is a field so deep in pure mathematics, it's hard to find actually useful applications of a topic so niche and abstract as non-orientable surfaces, so I'm stretching the meaning of "applications" a little bit to include anywhere non-orinetable surfaces pop up in real life, not necessarily applied in any useful way.
+Since topology is a field so deep in pure mathematics, it's hard to find actually useful applications of a topic so niche and abstract as non-orientable surfaces, so I'm stretching the meaning of "applications" a little bit to include anywhere non-orientable surfaces pop up in real life, not necessarily applied in any useful way.
 
 Due to their highly recognizable form, Möbius strips in particular have become popular in graphic design and architecture, but there are also some practical uses. Here's a list:
 - Google Drive logo
@@ -173,6 +175,8 @@ There are certain topics that are so intrinsically fascinating that you can’t 
 I think that this sense of awe is universal and everyone has their own topics that elicit that feeling. For me, Klein bottles and the whole concept of non-orientability have been a source of continuous fascination. so I’m excited for the opportunity to share why I think it’s interesting. Nonorientable surfaces in particular are relatively far from applied math, and so my why for choosing to explore them in further depth does not lie in any sort of external use but rather that intrinsic curiosity.  
 
 *This explanation for why I care about Klein bottles was copy-pasted verbatim from my project proposal.*  
+
+I also want to thank Cliff Stoll for getting me interested in topology with his infectious fascination with Klein bottles, and Randall Munroe for giving me the sense of humor to enjoy math and science.
 
 {% include linkedHeading.html heading="references" text="references" level=1 %}
 Abraham Goetz (1970) *Introduction to Differential Geometry*, page 28, Addison Wesley
