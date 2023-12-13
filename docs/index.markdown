@@ -26,7 +26,7 @@ There are a couple ways to think of **orientability**: the formal definition is 
 
 In popular mathematics, a surface that's **non-orientable** is usually described as having only one side, probably because that's the most exciting way to introduce the concept. You can imagine an ant walking along the surface of a Klein bottle: starting on the "outside", the ant can crawl through the tube and onto the opposite side of its starting point without ever crossing a boundary or edge, which means that the surface only has one side, and no "inside" or "outside." That's pretty neat! The formal definition is basically the opposite of orientability: it's a property of a surface where you can't consistently define clockwise and counterclockwise. If you try assigning normals like on an orientable surface, when you get back to your starting point the vector will be pointing in the opposite direction. Or, if a 2D object travels along a non-orientable surface, it will return mirrored.
 
- DRAWING OF VECTOR THINGS AND MIRRORED IMAGE HERE
+![normals](/assets/images/normals.png){:width="90%"}
 
 On a non-orientable surface, you can't integrate vector fields (e.g. surface integrals, line integrals) because you can't reconcile the inconsistent surface normals. You can still take multiple integrals and things like that, to find volumes.  
 
@@ -44,7 +44,7 @@ Alternatively, a Klein bottle can be constructed via the sophisticated mathemati
 &emsp;&emsp;&emsp;&emsp;Thought the Möbius band was divine.  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Said he: "If you glue  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;The edges of two,  
-&emsp;&emsp;&emsp;&emsp;You'll get a weird bottle like mine.  
+&emsp;&emsp;&emsp;&emsp;You'll get a weird bottle like mine." 
 
 Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
 - one-sided surface
