@@ -83,11 +83,11 @@ DRAWING OF FUNDAMENTAL POLYGONS
 
 It's important to note that all the Klein bottles we see are 2d manifolds immersed in 3d space so we can visualize them: in their "true form," they need to live in 4 dimensions so that it can pass through itself without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4d parametrizations of Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? 
 
-Let's use the figure-8 immersions, because they're cool. They look like topologists woke up one day with a mission to be as spinny as possible: they chose the spinnest shape, spun it around a central axis, while also spinning that shape about its own center.  
+Let's use the figure-8 immersions, because they're cool. They look like topologists woke up one day with a mission to be as spinny as possible: they chose the spinnest shape and spun it around a central axis, while also spinning that shape about its own center.  
 
-![figure 8 bottle](/assets/images/figure8.png){:width="25%"}
+![xkcd](/assets/images/xkcd.png){:width="80%"}
 
-First, a parametrization of the 4D non-intersecting figure-8 manifold based on that of the flat torus, another 4D manifold: 
+First, a non-intersecting parametrization of the figure-8 manifold in 4 dimensions, based on that of the flat torus: 
 
 $$x=R(\cos{\frac{\theta}{2}\cos{v}}-\sin{\frac{\theta}{2}}\sin{2v})$$
 
@@ -161,7 +161,7 @@ Due to their highly recognizable form, Möbius strips in particular have become 
 
 {% include linkedHeading.html heading="why" text="what's the point?" level=1 %}
 
-DRAWING OF I klein bottle KLEIN BOTTLES
+![love](/assets/images/love.png){:width="80%"}
 
 There are certain topics that are so intrinsically fascinating that you can’t rest until you find out more. The only way I can describe it is the sort of feeling that you get when you learn for the first time that a Mobius strip - or in my case, a Klein bottle - is nonorientable, essentially meaning that it has only one side (a pretty high level explanation). You sort of think to yourself well, that doesn’t sound right. You look at one and start tracing a path through the air with your finger, slowly realizing *holy cow, this thing actually does only have one side… how? why?*  
 
