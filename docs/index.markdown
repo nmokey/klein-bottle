@@ -8,7 +8,7 @@ This site is my final project for the first semester of Mrs. Reyes's multivariab
 
 For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. 
 
-connections to mulit: multivarable functions, parametrizing surfaces, change in variables
+connections to multi: multivarable functions, parametrizing surfaces, change in variables
 
 {% include linkedHeading.html heading="artwork" text = "artwork" level=1 %}
 Work in progress.  
@@ -22,9 +22,12 @@ In topology, a **manifold** is a topological space which locally resembles Eucli
 ![orientable surfaces](/assets/images/orientable.png){:width="80%"}
 
 There are a couple ways to think of **orientability**: the formal definition is that it's a property of topological manifolds which permits a consistent sense of clockwise and counterclockwise. If you choose a direction of a normal vector and keep assigning normals along the surface, when you loop back around to your starting point the normal vector should still point in the same direction.  
-*Side note: orientability is also a concept for curves. **Curve orientation** is simply the choice of which direction you travel along the curve. For example, the x-axis pointing right and y-axis pointing up are technically chosen orientations. Closed curves can either be positively/counterclockwise oriented or negatively/clockwise oriented.*
 
-In popular mathematics, a surface that's **non-orientable** is usually described as having only one side, probably because that's the most exciting way to introduce the concept. You can imagine an ant walking along the surface of a Klein bottle: starting on the "outside", the ant can crawl through the tube and onto the opposite side of its starting point without ever crossing a boundary or edge, which means that the surface only has one side, and no "inside" or "outside." That's pretty neat! The formal definition is basically the opposite of orientability: it's a property of a surface where you can't consistently define clockwise and counterclockwise. If you try assigning normals like on an orientable surface, when you get back to your starting point the vector will be pointing in the opposite direction. Or, if a 2D object travels along a non-orientable surface, it will return mirrored.
+*Side note: orientability is also a concept for curves. **Curve orientation** is simply the choice of which direction you travel along the curve. It's a particular case of the concept of orientability for a manifold. For example, the x-axis pointing right and y-axis pointing up are technically chosen orientations. Closed curves can either be positively/counterclockwise oriented or negatively/clockwise oriented.*
+
+In popular mathematics, a surface that's **non-orientable** is usually described as having only one side, probably because that's the most exciting way to introduce the concept. You can imagine an ant walking along the surface of a Klein bottle: starting on the "outside", the ant can crawl through the tube and onto the opposite side of its starting point without ever crossing a boundary or edge, which means that the surface only has one side, and no "inside" or "outside." That's pretty neat!  
+
+The formal definition is basically the opposite of orientability: it's a property of a surface where you can't consistently define clockwise and counterclockwise. If you try assigning normals like on an orientable surface, when you get back to your starting point the vector will be pointing in the opposite direction. Or, if a 2D object travels along a non-orientable surface, it will return mirrored.
 
 ![normals](/assets/images/normals.png){:width="90%"}
 
@@ -38,7 +41,7 @@ Named after [Felix Klein](https://en.wikipedia.org/wiki/Felix_Klein){:target="_b
 Constructing a Klein bottle is simple - it's just 3 steps. Take an open cylinder, extend one end of it and bend it around to go back through itself, and smoothly connect the ends. Did you follow along? Awesome! You now have your very own Klein bottle.  
 ![anatomy](/assets/images/anatomy.png){:width="90%"}
 
-Alternatively, a Klein bottle can be constructed via the sophisticated mathematical technique of taking two Möbius loops and gluing them together, as described by this limerick by Leo Moser:  
+Alternatively, a Klein bottle can be constructed via the sophisticated mathematical technique of taking two Möbius loops and gluing them together. As Leo Moser puts it:  
 
 &emsp;&emsp;&emsp;&emsp;A mathematician named Klein  
 &emsp;&emsp;&emsp;&emsp;Thought the Möbius band was divine.  
@@ -57,7 +60,7 @@ Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
 - Euler characteristic of 0, given by vertices - edges + faces
 - genus of 1, loosely meaning it has one hole
 
-If you have two pieces of paper and connect them, the edges that have been joined are lost. So what if we do the same with Möbius strips? Well, each strip has one edge, so if we connect them, both should be lost: we end up with a surface that has no edges: the Klein bottle. Neat! The Klein bottle also has zero volume because it does not doesn't separate the universe into two parts.
+Those first three are the most well-known properties, so let's break them down. If you have two pieces of paper and connect them, the edges that have been joined are lost. So what if we do the same with Möbius strips? Well, each strip has one edge, so if we connect them, both should be lost: we end up with a surface that has no edges: the Klein bottle. Neat! The Klein bottle also has zero volume because it does not doesn't separate the universe into two parts.
 
 Ok, so we understand what a Klein bottle is conceptually. The nice thing about topology is that it doesn't matter how we bend, stretch, or twist our surfaces (known as *continuous deformations*), they still retain the same properties - this is why a coffee mug is topologically equivalent to a donut. We just can't tear, glue, open/close holes in them or pass them through themselves. But what if we wanted to take away this freedom and look at some equations that can give us an idea of what "version" of a Klein bottle we're actually seeing?
 
@@ -71,7 +74,7 @@ $$z(u,v) = -\sin{\frac{u}{2}}(\sqrt{2}+\cos{v})+\cos\frac{u}{2}\sin{v}\cos{v}$$
 
 Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space. If this sounds confusing, a good way to think about it is a photograph of a cup is a 2D representation of a 3D cup that's been flattened: it's been *immersed* in 2D space. In the same way, we're representing the Klein bottle one dimension down so it can exist in our universe which, alas, has only 3 spatial dimensions. This particular immersion of a Klein bottle is pretty ugly, but that's okay, because there are many others. There are 3 common forms a Klein bottle takes in $\mathbb{R}^3$: the classic "bottle" shape, the right-handed and left-handed figure-8 immersions (which are *chiral*), and a pinched torus.  
 
-DRAWING OF KLEIN BOTTLE FLAVORS  
+DRAWING OF KLEIN BOTTLE "FLAVORS"  
 
 You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. You're probably pretty familiar with this general concept: $u$ substitution for integration and differentiation are examples of change of variables. Some other useful changes in variables include transformations into polar coordinates for 2d and cylindrical or spherical coordinates for 3d. This is common when writing equations to describe topological spaces, since they're so strange looking, and usually composed of surfaces of revolution.   
 
@@ -85,7 +88,7 @@ It's important to note that all the Klein bottles we see are 2d manifolds immers
 
 Let's use the figure-8 immersions, because they're cool. They look like topologists woke up one day with a mission to be as spinny as possible: they chose the spinnest shape and spun it around a central axis, while also spinning that shape about its own center.  
 
-![xkcd](/assets/images/xkcd.png){:width="80%"}
+![xkcd](/assets/images/xkcd.png){:width="90%"}
 
 First, a non-intersecting parametrization of the figure-8 manifold in 4 dimensions, based on that of the flat torus: 
 
@@ -97,7 +100,7 @@ $$z=P\cos{\theta}(1+\epsilon\sin{v})$$
 
 $$w=P\sin{\theta}(1+\epsilon\sin{v})$$
 
-where $R$ and $P$ are constants which determine aspect ratio, $v$ determines the position around the figure 8, and $\theta$ is the rotational angle about the figure-8 and position about the $zw$ plane. (Have fun trying to visualize that!)
+where $R$ and $P$ are constants which determine aspect ratio, $v$ determines the position around the figure-8, and $\theta$ is the rotational angle about the figure-8 and position about the $zw$ plane. (Have fun trying to visualize that!)
 
 Now, when we take the immersion, we lose a dimension and the Klein "bottle" becomes self-intersecting.
 
@@ -107,15 +110,17 @@ $$y=(r+\cos{\frac{\theta}{2}}\sin{v}-\sin{\frac{\theta}{2}}\sin{2v})\cos{\theta}
 
 $$z=\sin{\frac{\theta}{2}}\sin{v}+\cos{\frac{\theta}{2}}\sin{2v}$$
 
+for $0 \le \theta < 2\pi, 0 \le v < 2\pi$ and $r > 2$, where $r$ is the radius and $\theta$ serves as both the angle in the $xy$ plane but also the rotation of the figure-8. Again, $v$ determines the position around the figure-8. The curve of self-intersection for this immersion is a circle in the $xy$ plane.   
+
 All this is to say, when we see a Klein bottle we're viewing a representation of a manifold we can't fully comprehend. 
 
 {% include linkedHeading.html heading = "examples" text="other examples of non-orientable manifolds" level=1 %}
 ## möbius strip
 Named after [August Ferdinand Möbius](https://en.wikipedia.org/wiki/August_Ferdinand_Möbius){:target="_blank"}{:rel="noopener noreferrer"}, who discovered it as a mathematical object in 1858, although the shape appeared as early as the 3rd century in Roman mosaics.  
 
-DRAWING OF CONSTRUCTING ONE AND CUT MOBIUS STRIP  
-
 The Möbius strip is probably the most well-known non-orientable surface, since it's much easier to implement in architecture and whatnot than Klein bottles. You can easily make one yourself by taking a strip of paper, half-twisting it, and taping the ends together. Möbius strips are essentially Klein bottles 1 dimension down: if you cut a Klein bottle in half (if for some reason you'd deface such a beautiful surface), you'd get two mirror-image Möbius strips: a left-handed one and a right-handed one. Interestingly enough, if you cut along the centerline of a Möbius strip, you end up with a perfectly orientable double-length two-sided strip. Unlike the Klein bottle, the Möbius strip is not a closed manifold, and can be embedded in Euclidian space $\mathbb{R}^3$.  
+
+![mobius](/assets/images/mobius.png){:width="90%"}
 
 In differential geometry, you construct one by taking the space swept out by a line segment rotating in a plane that is also rotating. This is given by the [following parametrization](https://www.desmos.com/3d/ebeac4bd6e){:target="_blank"}{:rel="noopener noreferrer"}:
 
@@ -170,6 +175,8 @@ I think that this sense of awe is universal and everyone has their own topics th
 *This explanation for why I care about Klein bottles was copy-pasted verbatim from my project proposal.*  
 
 {% include linkedHeading.html heading="references" text="references" level=1 %}
+Abraham Goetz (1970) *Introduction to Differential Geometry*, page 28, Addison Wesley
+
 Alling, Norman, and Newcomb Greenleaf. “Klein Surfaces and Real Algebraic Function Fields.” *Bulletin of the American  
 &emsp;&emsp;&emsp;&emsp;Mathematical Society*, vol. 75, no. 2, 21 Feb. 1969, pp. 869–872, https://doi.org/10.1090/bull/1969-75-02. 
 
