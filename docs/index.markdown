@@ -4,7 +4,7 @@ layout: default
 ![Homepage Banner](/assets/images/kleinbottlebanner.png){:width="90%"}
 
 {% include linkedHeading.html heading="introduction" text="introduction" level=1 %}
-This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. 
+This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. Here is the [presentation][https://docs.google.com/presentation/d/1KRzQdeeMmHbEVXQ5daXJeFZk051rRO1q0wc7Lney2fk/edit?usp=sharing]{:target="_blank"}{:rel="noopener noreferrer"}.  
 
 For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. 
 
@@ -59,6 +59,7 @@ Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
 - Y2K compliant ✓
 - Euler characteristic of 0, given by vertices - edges + faces
 - genus of 1, loosely meaning it has one hole
+- non-orientable genus of 2
 
 Those first three are the most well-known properties, so let's break them down. If you have two pieces of paper and connect them, the edges that have been joined are "lost". So what if we do the same with Möbius strips? Well, each strip has one edge, so if we connect them, both should be lost: we end up with a surface that has no edges - the Klein bottle. Neat! The Klein bottle also has zero volume because it does not doesn't separate the universe into two parts.
 
@@ -122,7 +123,7 @@ All this is to say, when we see a Klein bottle we're viewing a representation of
 ## möbius strip
 Named after [August Ferdinand Möbius](https://en.wikipedia.org/wiki/August_Ferdinand_Möbius){:target="_blank"}{:rel="noopener noreferrer"}, who discovered it as a mathematical object in 1858, although the shape appeared as early as the 3rd century in Roman mosaics.  
 
-The Möbius strip is probably the most well-known non-orientable surface, since it's much easier to implement in architecture and whatnot than Klein bottles. You can easily make one yourself by taking a strip of paper, half-twisting it, and taping the ends together. Möbius strips are essentially Klein bottles 1 dimension down: if you cut a Klein bottle in half (if for some reason you'd deface such a beautiful surface), you'd get two mirror-image Möbius strips: a left-handed one and a right-handed one. Interestingly enough, if you cut along the centerline of a Möbius strip, you end up with a perfectly orientable double-length two-sided strip. Unlike the Klein bottle, the Möbius strip is not a closed manifold, and can be embedded in Euclidian space $\mathbb{R}^3$.  
+The Möbius strip is probably the most well-known non-orientable surface, since it's much easier to implement in architecture and whatnot than Klein bottles. You can easily make one yourself by taking a strip of paper, half-twisting it, and taping the ends together. Möbius strips are essentially Klein bottles 1 dimension down: if you cut a Klein bottle in half (if for some reason you'd deface such a beautiful surface), you'd get two mirror-image Möbius strips: a left-handed one and a right-handed one. Interestingly enough, if you cut along the centerline of a Möbius strip, you end up with a perfectly orientable double-length two-sided strip. Unlike the Klein bottle, the Möbius strip is not a closed manifold, does have a boundary, has no self-intersection, and can be embedded in Euclidian space $\mathbb{R}^3$.  
 
 ![mobius](/assets/images/mobius.png){:width="90%"}
 
@@ -210,3 +211,5 @@ Munroe, Marshall Evans. “Multiple Integrals - Oriented Manifolds.” *Modern M
 &emsp;&emsp;&emsp;&emsp;Dover Publications, Inc, Mineola, New York, 2019, pp. 263–268. 
 
 Stoll, Clifford. “What Is a Klein Bottle?” *Acme Klein Bottle*, Dec. 2021, www.kleinbottle.com/whats_a_klein_bottle.htm. 
+
+Wikipedia contributors. “Klein Bottle.” Wikipedia, 6 Nov. 2023, en.wikipedia.org/wiki/Klein_bottle.
