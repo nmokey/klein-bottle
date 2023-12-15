@@ -6,9 +6,9 @@ layout: default
 {% include linkedHeading.html heading="introduction" text="introduction" level=1 %}
 This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. Here is the [presentation](https://docs.google.com/presentation/d/1KRzQdeeMmHbEVXQ5daXJeFZk051rRO1q0wc7Lney2fk/edit?usp=sharing){:target="_blank"}{:rel="noopener noreferrer"}.  
 
-For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. My goal is to provide a broad, interesting glimpse into the amazing world of topology through an interesting topic.
+For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I'll quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. My goal is to provide a broad, interesting glimpse into the amazing world of topology through an interesting topic.
 
-connections to multi: multivarable functions, parametrizing surfaces, change of variables
+Connections to multi: multivarable functions, parametrizing surfaces, change of variables
 
 {% include linkedHeading.html heading="artwork" text = "artwork" level=1 %}
 Work in progress.  
@@ -60,9 +60,9 @@ Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
 - genus of 1, loosely meaning it has one hole
 - non-orientable genus of 2
 
-Those first three are the most well-known properties, so let's break them down. If you have two pieces of paper and connect them, the edges that have been joined are "lost". So what if we do the same with Möbius strips? Well, each strip has one edge, so if we connect them, both should be lost: we end up with a surface that has no edges - the Klein bottle. Neat! The Klein bottle also has zero volume because it does not doesn't separate the universe into two parts.
+Those first three are the most well-known properties, so let's break them down. We know that a Klein bottle is one-sided from when we defined non-orientability: you can't consistently assign normal vectors along the surface, so there's only one side (again, imagine the meandering ant). Next, if you have two pieces of paper and connect them, the edges that have been joined are "lost". So what if we do the same with Möbius strips? Well, each strip has one edge, so if we connect them, both should be lost: we end up with a surface that has no edges - the Klein bottle. Neat! Finally, the Klein bottle also has zero volume because it doesn't separate the universe into two parts.
 
-Yet another, more generalized and abstract way to define one: The solid Klein bottle is the non-orientable version of a solid torus. The Klein bottle's fundamental polygon is given below.  
+Yet another, more generalized and abstract way to define one: The solid Klein bottle is the non-orientable version of a solid torus. The Klein bottle's fundamental polygon, along with a couple other common ones, are given below.  
 
 ![polygons](/assets/images/polygons.png){:width="90%"}
 
@@ -90,7 +90,7 @@ Change of variables is a semester 2 topic from Chapter 16.9, because it's useful
 
 ![variables](/assets/images/variables.png){:width="100%"}
 
-It's important to note that all the Klein bottles we see are 2D manifolds immersed in 3D space so we can visualize them. In their "true form," they need to live in 4 dimensions so that they can pass through themselves without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4d parametrizations of Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? 
+It's important to note that all the Klein bottles we see are 2D manifolds immersed in 3D space so we can visualize them. In their "true form," they need to live in 4 dimensions so that they can pass through themselves without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4D parametrizations of Klein bottles and their 3D-immersed counterparts to try to get a glimpse of what Klein Bottles *should* look like? 
 
 Let's use the figure-8 immersion, because it's cool. It looks like topologists woke up one day with a mission to be as spinny as possible: they chose the spinnest shape and spun it around a central axis, while also spinning that shape about its own center.  
 
@@ -106,9 +106,9 @@ $$z=P\cos{\theta}(1+\epsilon\sin{v})$$
 
 $$w=P\sin{\theta}(1+\epsilon\sin{v})$$
 
-where $R$ and $P$ are constants which determine aspect ratio, $v$ determines the position around the figure-8, and $\theta$ is the rotational angle about the figure-8 and position about the $zw$-plane. (Have fun trying to visualize that!) In this parametrization, ____
+where $R$ and $P$ are constants which determine aspect ratio, $v$ determines the position around the figure-8, and $\theta$ is the rotational angle about the figure-8 and position about the $zw$-plane. (Have fun trying to visualize that!) In this parametrization, the surface doesn't go through itself because it has that extra spatial dimension that it requires. Thus, this is an embedding of the Klein bottle.
 
-Now, when we take the immersion, we lose a dimension and the Klein "bottle" becomes self-intersecting.
+Now, when we take the immersion, we lose a dimension and the Klein "bottle" (or tube) becomes self-intersecting.
 
 $$x=(r+\cos{\frac{\theta}{2}}\sin{v}-\sin{\frac{\theta}{2}}\sin{2v})\cos{\theta}$$
 
@@ -122,7 +122,7 @@ All this is to say, when we see a Klein bottle we're viewing a representation of
 
 {% include linkedHeading.html heading = "examples" text="other examples of non-orientable manifolds" level=1 %}
 ## möbius strip
-Named after [August Ferdinand Möbius](https://en.wikipedia.org/wiki/August_Ferdinand_Möbius){:target="_blank"}{:rel="noopener noreferrer"}, who discovered it as a mathematical object in 1858, although the shape appeared as early as the 3rd century in Roman mosaics.  
+Named after [August Ferdinand Möbius](https://en.wikipedia.org/wiki/August_Ferdinand_Möbius){:target="_blank"}{:rel="noopener noreferrer"}, who discovered it as a mathematical object in 1858, although the shape appeared as early as the 3rd century AD in Roman mosaics.  
 
 The Möbius strip is probably the most well-known non-orientable surface, since it's much easier to implement in architecture and whatnot than Klein bottles. You can easily make one yourself by taking a strip of paper, half-twisting it, and taping the ends together. Möbius strips are essentially Klein bottles 1 dimension down: if you cut a Klein bottle in half (if for some reason you'd deface such a beautiful surface), you'd get two mirror-image Möbius strips: a left-handed one and a right-handed one. Interestingly enough, if you cut along the centerline of a Möbius strip, you end up with a perfectly orientable double-length two-sided strip. Unlike the Klein bottle, the Möbius strip is not a closed manifold, does have a boundary, has no self-intersection, and can be embedded in Euclidian space $\mathbb{R}^3$.  
 
@@ -166,21 +166,21 @@ Due to their highly recognizable form, Möbius strips in particular have become 
 - industrial belts (to wear evenly on "both" sides)
 - trihexaflexagons
 - dual-track roller coasters
-- world map projection, so that there are no east-west boundaries
-- The Möbius resistor, a strip of conductive material covering the single side of a dielectric Möbius strip, in a way that cancels its own self-inductance.
+- a world map projection, where there are no east-west boundaries
+- the Möbius resistor, a strip of conductive material covering the single side of a dielectric Möbius strip, in a way that cancels its own self-inductance.
 - analyzing Bach's 5th Canon
 
 {% include linkedHeading.html heading="why" text="what's the point?" level=1 %}
 
 ![love](/assets/images/love.png){:width="80%"}
 
-There are certain topics that are so intrinsically fascinating that you can’t rest until you find out more. The only way I can describe it is the sort of feeling that you get when you learn for the first time that a Mobius strip - or in my case, a Klein bottle - is nonorientable, essentially meaning that it has only one side (a pretty high level explanation). You sort of think to yourself well, that doesn’t sound right. You look at one and start tracing a path through the air with your finger, slowly realizing *holy cow, this thing actually does only have one side… how? why?*  
+There are certain topics that are so intrinsically fascinating that you can’t rest until you find out more. The only way I can describe it is the sort of feeling that you get when you learn for the first time that a Möbius strip - or in my case, a Klein bottle - is nonorientable, essentially meaning that it has only one side (a pretty high level explanation). You sort of think to yourself well, that doesn’t sound right. You look at one and start tracing a path through the air with your finger, slowly realizing *holy cow, this thing actually does only have one side… how? why?*  
 
 I think that this sense of awe is universal and everyone has their own topics that elicit that feeling. For me, Klein bottles and the whole concept of non-orientability have been a source of continuous fascination. so I’m excited for the opportunity to share why I think it’s interesting. Nonorientable surfaces in particular are relatively far from applied math, and so my why for choosing to explore them in further depth does not lie in any sort of external use but rather that intrinsic curiosity.  
 
 *This explanation for why I care about Klein bottles was copy-pasted verbatim from my project proposal.*  
 
-I also want to thank Cliff Stoll for getting me interested in topology with his infectious fascination with Klein bottles, and Randall Munroe for giving me the sense of humor to enjoy math and science. If non-orientable manifolds are interesting to you, I highly recommend checking out Dr. Stoll's videos with Numberphile, and if you like 
+I also want to thank Cliff Stoll for getting me interested in topology with his infectious fascination with Klein bottles, and Randall Munroe for giving me the sense of humor to enjoy math and science. If non-orientable manifolds are interesting to you, I highly recommend checking out [Dr. Stoll's videos](https://www.youtube.com/watch?v=AAsICMPwGPY){:target="_blank"}{:rel="noopener noreferrer"} with Numberphile, and if you love science and life in general you should check out [xkcd](https://xkcd.com/){:target="_blank"}{:rel="noopener noreferrer"}!
 
 {% include linkedHeading.html heading="references" text="references" level=1 %}
 Abraham Goetz (1970) *Introduction to Differential Geometry*, page 28, Addison Wesley
@@ -211,7 +211,7 @@ Junghenn, Hugo D. (2015). *A Course in Real Analysis*. Boca Raton, Florida: CRC 
 Munroe, Marshall Evans. “Multiple Integrals - Oriented Manifolds.” *Modern Multidimensional Calculus*, Reprint ed.,  
 &emsp;&emsp;&emsp;&emsp;Dover Publications, Inc, Mineola, New York, 2019, pp. 263–268. 
 
-Stewart, James. “Section 16.9 - Change of Variables in Multiple Integrals.” Multivariable Calculus, 6th ed., Thomson Brooks/Cole,  
+Stewart, James. “Section 16.9 - Change of Variables in Multiple Integrals.” *Multivariable Calculus*, 6th ed., Thomson Brooks/Cole,  
 &emsp;&emsp;&emsp;&emsp;Belmont, California, 2009, pp. 1048–1056. 
 
 Stoll, Clifford. “What Is a Klein Bottle?” *Acme Klein Bottle*, Dec. 2021, www.kleinbottle.com/whats_a_klein_bottle.htm. 
