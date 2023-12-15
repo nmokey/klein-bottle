@@ -8,7 +8,7 @@ This site is my final project for the first semester of Mrs. Reyes's multivariab
 
 For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. My goal is to provide a broad, interesting glimpse into the amazing world of topology through an interesting topic.
 
-connections to multi: multivarable functions, parametrizing surfaces, change in variables
+connections to multi: multivarable functions, parametrizing surfaces, change of variables
 
 {% include linkedHeading.html heading="artwork" text = "artwork" level=1 %}
 Work in progress.  
@@ -84,7 +84,7 @@ This particular immersion of a Klein bottle is pretty ugly, but that's okay, bec
 
 ![flavors](/assets/images/flavors.png){:width="90%"}
 
-You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. You're probably pretty familiar with this general concept: $u$ substitution for differentiation/integration and polar coordinates are examples of change of variables. Some other useful changes in variables include transformations into cylindrical or spherical coordinates for multivariable functions. This is common when writing equations to describe topological spaces, since they're so strange looking, and usually composed of surfaces of revolution.   
+You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change of variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. You're probably pretty familiar with this general concept: $u$ substitution for differentiation/integration and polar coordinates are examples of change of variables. Some other useful changes of variables include transformations into cylindrical or spherical coordinates for multivariable functions. This is common when writing equations to describe topological spaces, since they're so strange looking, and usually composed of surfaces of revolution.   
 
 Change of variables is a semester 2 topic from Chapter 16.9, because it's useful in multiple integrals. Generally, we consider a change of variables from a $uv$-plane to the $xy$-plane through a **transformation** $T$: $T(u,v)=(x,y)$. It remaps the region to some other region that will hopefully simplify our parametrization, integral, or whatever it is we're doing. If $T(u_1, v_1)=(x_1,y_1)$, then the point $(x_1,y_1)$ is the **image** of $(u_1, v_1)$. $T$ is called **one-to-one** if no two points have the same image.
 
