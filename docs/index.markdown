@@ -4,11 +4,16 @@ layout: default
 ![Homepage Banner](/assets/images/kleinbottlebanner.png){:width="90%"}
 
 {% include linkedHeading.html heading="introduction" text="introduction" level=1 %}
-This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. Here is the [presentation](https://docs.google.com/presentation/d/1KRzQdeeMmHbEVXQ5daXJeFZk051rRO1q0wc7Lney2fk/edit?usp=sharing){:target="_blank"}{:rel="noopener noreferrer"}.  
+This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. Here's the [presentation](https://docs.google.com/presentation/d/1KRzQdeeMmHbEVXQ5daXJeFZk051rRO1q0wc7Lney2fk/edit?usp=sharing){:target="_blank"}{:rel="noopener noreferrer"} I gave in class.  
 
 For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I'll quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. My goal is to provide a broad, interesting glimpse into the amazing world of topology through an interesting topic.
 
-Connections to multi: multivarable functions, parametrizing surfaces, change of variables
+Connections to multivariable calculus:  
+- multivariable functions (chapter 15.1)
+- parametrizing surfaces (chapter 11.2, 17.6)
+- orientability (17.2, 17.4)
+- changes of variables (chapter 16.9)
+
 
 {% include linkedHeading.html heading="artwork" text = "artwork" level=1 %}
 Work in progress.  
