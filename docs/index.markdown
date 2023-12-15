@@ -6,7 +6,7 @@ layout: default
 {% include linkedHeading.html heading="introduction" text="introduction" level=1 %}
 This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. Here is the [presentation](https://docs.google.com/presentation/d/1KRzQdeeMmHbEVXQ5daXJeFZk051rRO1q0wc7Lney2fk/edit?usp=sharing){:target="_blank"}{:rel="noopener noreferrer"}.  
 
-For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. 
+For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. My goal is to provide a broad, interesting glimpse into the amazing world of topology through an interesting topic.
 
 connections to multi: multivarable functions, parametrizing surfaces, change in variables
 
@@ -78,19 +78,21 @@ $$y(u,v) = \sin{u}\cos\frac{u}{2}(\sqrt{2}+\cos{v})+\sin\frac{u}{2}\sin{v}\cos{v
 
 $$z(u,v) = -\sin{\frac{u}{2}}(\sqrt{2}+\cos{v})+\cos\frac{u}{2}\sin{v}\cos{v}$$  
 
-Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space, not an **embedding**. If this sounds confusing, a good way to think about it is a photograph of a penguin is a 2D representation of a 3D penguin that's been flattened: it's been *immersed* in 2D space. In the same way, we're taking a "photograph" of the Klein bottle one dimension down so it can exist in our universe which, alas, has only 3 spatial dimensions. The difference between an embedding and an immersion is that immersions allow self-intersections, but neither can have folds or cusps.
+Of course, since this parametrization has 3 variables, it represents an **immersion** of the manifold in $\mathbb{R}^3$ space, not an **embedding**. If this sounds confusing, a good way to think about it is that a photograph of a penguin is a 2D representation of a 3D penguin that's been flattened: it's been *immersed* in 2D space. In the same way, we're taking a "photograph" of the Klein bottle one dimension down so it can exist in our universe which, alas, has only 3 spatial dimensions. The difference between an embedding and an immersion is that immersions allow self-intersections, but neither can have folds or cusps.
 
 This particular immersion of a Klein bottle is pretty ugly, but that's okay, because there are many others. There are 3 common forms a Klein bottle takes in $\mathbb{R}^3$: the classic "bottle" shape, the right-handed and left-handed figure-8 immersions (which are *chiral*), and a pinched torus.  
 
 ![flavors](/assets/images/flavors.png){:width="90%"}
 
-You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. You're probably pretty familiar with this general concept: $u$ substitution for integration and differentiation are examples of change of variables. Some other useful changes in variables include transformations into polar coordinates for 2d and cylindrical or spherical coordinates for 3d. This is common when writing equations to describe topological spaces, since they're so strange looking, and usually composed of surfaces of revolution.   
+You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. You're probably pretty familiar with this general concept: $u$ substitution for differentiation/integration and polar coordinates are examples of change of variables. Some other useful changes in variables include transformations into cylindrical or spherical coordinates for multivariable functions. This is common when writing equations to describe topological spaces, since they're so strange looking, and usually composed of surfaces of revolution.   
 
-DRAWING OF A DOMAIN BEING REMAPPED IN CHANGE OF VARIABLES
+Change of variables is a semester 2 topic from Chapter 16.9, because it's useful in multiple integrals. Generally, we consider a change of variables from a $uv$-plane to the $xy$-plane through a **transformation** $T$: $T(u,v)=(x,y)$. It remaps the region to some other region that will hopefully simplify our parametrization, integral, or whatever it is we're doing. If $T(u_1, v_1)=(x_1,y_1)$, then the point $(x_1,y_1)$ is the **image** of $(u_1, v_1)$. $T$ is called **one-to-one** if no two points have the same image.
 
-It's important to note that all the Klein bottles we see are 2d manifolds immersed in 3d space so we can visualize them: in their "true form," they need to live in 4 dimensions so that it can pass through itself without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4d parametrizations of Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? 
+![variables](/assets/images/variables.png){:width="100%"}
 
-Let's use the figure-8 immersions, because they're cool. They look like topologists woke up one day with a mission to be as spinny as possible: they chose the spinnest shape and spun it around a central axis, while also spinning that shape about its own center.  
+It's important to note that all the Klein bottles we see are 2D manifolds immersed in 3D space so we can visualize them. In their "true form," they need to live in 4 dimensions so that they can pass through themselves without a hole - they have no self-intersection (also called a *nexus*). But here's an idea: what if I wanted to break my brain and consider 4d parametrizations of Klein bottles and their 3d embedded counterparts to try to get a glimpse of what Klein Bottles *should* look like? 
+
+Let's use the figure-8 immersion, because it's cool. It looks like topologists woke up one day with a mission to be as spinny as possible: they chose the spinnest shape and spun it around a central axis, while also spinning that shape about its own center.  
 
 ![xkcd](/assets/images/xkcd.png){:width="90%"}
 
@@ -104,7 +106,7 @@ $$z=P\cos{\theta}(1+\epsilon\sin{v})$$
 
 $$w=P\sin{\theta}(1+\epsilon\sin{v})$$
 
-where $R$ and $P$ are constants which determine aspect ratio, $v$ determines the position around the figure-8, and $\theta$ is the rotational angle about the figure-8 and position about the $zw$ plane. (Have fun trying to visualize that!)
+where $R$ and $P$ are constants which determine aspect ratio, $v$ determines the position around the figure-8, and $\theta$ is the rotational angle about the figure-8 and position about the $zw$-plane. (Have fun trying to visualize that!) In this parametrization, ____
 
 Now, when we take the immersion, we lose a dimension and the Klein "bottle" becomes self-intersecting.
 
@@ -114,7 +116,7 @@ $$y=(r+\cos{\frac{\theta}{2}}\sin{v}-\sin{\frac{\theta}{2}}\sin{2v})\cos{\theta}
 
 $$z=\sin{\frac{\theta}{2}}\sin{v}+\cos{\frac{\theta}{2}}\sin{2v}$$
 
-for $0 \le \theta < 2\pi, 0 \le v < 2\pi$ and $r > 2$, where $r$ is the radius and $\theta$ serves as both the angle in the $xy$ plane but also the rotation of the figure-8. Again, $v$ determines the position around the figure-8. The curve of self-intersection for this immersion is a circle in the $xy$ plane.   
+for $0 \le \theta < 2\pi, 0 \le v < 2\pi$ and $r > 2$, where $r$ is the radius and $\theta$ serves as both the angle in the $xy$-plane but also the rotation of the figure-8. Again, $v$ determines the position around the figure-8. The curve of self-intersection for this immersion is a circle in the $xy$-plane.   
 
 All this is to say, when we see a Klein bottle we're viewing a representation of a manifold we can't fully comprehend. 
 
@@ -137,9 +139,9 @@ $$z(u,v) = \frac{v}{2}\sin{\frac{u}{2}}$$
 for $0 \le u \le 2\pi$ and $-1\le v \le 1$, where $u$ is the rotation angle of the plane and $v$ is the position of a point along the rotating line segment. This is another example of a change of variables.
 
 ## real projective plane
-The real projective plane is a compact non-orientable 2D manifold with Euler characteristic 1. It can be immersed (with self-intersections) into 3-space as Boy's surface or Roman surface.
+The real projective plane is a compact non-orientable 2D manifold with Euler characteristic 1. It can be immersed (with self-intersections) into 3-space as Boy's surface or Roman surface, but not embedded.
 
-A Möbius strip is a punctured projective plane, and since a Klein bottle is two Möbius strips glued together, it follows that a Klein bottle is the connected sum of 2 real projective planes.
+A Möbius strip is a punctured projective plane, and since a Klein bottle is two Möbius strips glued together, it follows that a Klein bottle is the connected sum of two real projective planes.
 
 ## roman surface
 The Roman surface, or Steiner surface, is a [self-intersecting mapping](https://www.desmos.com/3d/2f51137a1b){:target="_blank"}{:rel="noopener noreferrer"} (not an immersion) of the real projective plane into $\mathbb{R}^3$ space. It's made up of "bulbous lobes," and can simply be constructed as a sphere under the map $f(x,y,z) = (yz,xz,xy)$:
@@ -150,7 +152,7 @@ Another way to construct it, which is more relevant to multi, is by gluing toget
 
 ![roman surface](/assets/images/romansurface.svg){:width="40%"}
 
-{% include linkedHeading.html heading="applications" text="\"applications\" of non-orientable manifolds" level=1 %}
+{% include linkedHeading.html heading="applications" text="applications of non-orientable manifolds" level=1 %}
 Since topology is a field so deep in pure mathematics, it's hard to find actually useful applications of a topic so niche and abstract as non-orientable surfaces, so I'm stretching the meaning of "applications" a little bit to include anywhere non-orientable surfaces pop up in real life, not necessarily applied in any useful way.
 
 Due to their highly recognizable form, Möbius strips in particular have become popular in graphic design and architecture, but there are also some practical uses. Here's a list:
@@ -178,7 +180,7 @@ I think that this sense of awe is universal and everyone has their own topics th
 
 *This explanation for why I care about Klein bottles was copy-pasted verbatim from my project proposal.*  
 
-I also want to thank Cliff Stoll for getting me interested in topology with his infectious fascination with Klein bottles, and Randall Munroe for giving me the sense of humor to enjoy math and science.
+I also want to thank Cliff Stoll for getting me interested in topology with his infectious fascination with Klein bottles, and Randall Munroe for giving me the sense of humor to enjoy math and science. If non-orientable manifolds are interesting to you, I highly recommend checking out Dr. Stoll's videos with Numberphile, and if you like 
 
 {% include linkedHeading.html heading="references" text="references" level=1 %}
 Abraham Goetz (1970) *Introduction to Differential Geometry*, page 28, Addison Wesley
@@ -208,6 +210,9 @@ Junghenn, Hugo D. (2015). *A Course in Real Analysis*. Boca Raton, Florida: CRC 
 
 Munroe, Marshall Evans. “Multiple Integrals - Oriented Manifolds.” *Modern Multidimensional Calculus*, Reprint ed.,  
 &emsp;&emsp;&emsp;&emsp;Dover Publications, Inc, Mineola, New York, 2019, pp. 263–268. 
+
+Stewart, James. “Section 16.9 - Change of Variables in Multiple Integrals.” Multivariable Calculus, 6th ed., Thomson Brooks/Cole,  
+&emsp;&emsp;&emsp;&emsp;Belmont, California, 2009, pp. 1048–1056. 
 
 Stoll, Clifford. “What Is a Klein Bottle?” *Acme Klein Bottle*, Dec. 2021, www.kleinbottle.com/whats_a_klein_bottle.htm. 
 
