@@ -4,7 +4,7 @@ layout: default
 ![Homepage Banner](/assets/images/kleinbottlebanner.png){:width="90%"}
 
 {% include linkedHeading.html heading="introduction" text="introduction" level=1 %}
-This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. Here is the [presentation][https://docs.google.com/presentation/d/1KRzQdeeMmHbEVXQ5daXJeFZk051rRO1q0wc7Lney2fk/edit?usp=sharing]{:target="_blank"}{:rel="noopener noreferrer"}.  
+This site is my final project for the first semester of Mrs. Reyes's multivariable calculus course! It's hosted by GitHub Pages at [this repository](https://github.com/nmokey/klein-bottle){:target="_blank"}{:rel="noopener noreferrer"}, and is built with Jekyll and written in Markdown. Here is the [presentation](https://docs.google.com/presentation/d/1KRzQdeeMmHbEVXQ5daXJeFZk051rRO1q0wc7Lney2fk/edit?usp=sharing){:target="_blank"}{:rel="noopener noreferrer"}.  
 
 For my project, I'm focusing on exploring a specific subset of topological spaces called **non-orientable manifolds**, their definitions and fascinating properties, and their connection to multivariable calculus. Topology has a lot of jargon, so I will quickly go over some basic definitions so everything is relatively easy to understand, but it probably means that I'll be making some simplifications and saying things that are only *technically* accurate. In addition to drawing connections between Klein bottles and multivariable calculus, I'll also discuss other non-orientable manifolds, topology topics, and some differential geometry like parametrizing surfaces. 
 
@@ -21,11 +21,11 @@ In topology, a **manifold** is a topological space which locally resembles Eucli
 
 ![orientable surfaces](/assets/images/orientable.png){:width="80%"}
 
-There are a couple ways to think of **orientability**: the formal definition is that it's a property of topological manifolds which permits a consistent sense of clockwise and counterclockwise. If you choose a direction of a normal vector and keep assigning normals along the surface, when you loop back around to your starting point the normal vector should still point in the same direction.  
+There are a couple ways to think of **orientability**: the formal definition is that it's a property of topological manifolds which permits a consistent sense of clockwise and counterclockwise. Intuitively, this means that if you choose a direction of a normal vector and keep assigning normals along the surface, when you loop back around to your starting point the normal vector should still point in the same direction. Another definition is that a surface is orientable if and only if it contains a Möbius strip.  
 
 *Side note: orientability is also a concept for curves. **Curve orientation** is simply the choice of which direction you travel along the curve. It's a particular case of the concept of orientability for a manifold. For example, the x-axis pointing right and y-axis pointing up are technically chosen orientations. Closed curves can either be positively/counterclockwise oriented or negatively/clockwise oriented.*
 
-In popular mathematics, a surface that's **non-orientable** is usually described as having only one side, probably because that's the most exciting way to introduce the concept. You can imagine an ant walking along the surface of a Klein bottle: starting on the "outside", the ant can crawl through the tube and onto the opposite side of its starting point without ever crossing a boundary or edge, which means that the surface only has one side, and no "inside" or "outside." That's pretty neat!  
+In popular mathematics, a surface that's **non-orientable** is usually described as having only one side, probably because that's the most exciting way to introduce the concept. You can imagine an ant walking along the surface of a Klein bottle: starting on the "outside", the ant can crawl through the tube and onto the "inside" of its starting point without ever crossing a boundary or edge. This means that surface only has one side, and there is no notion of "inside" or "outside." That's pretty neat!  
 
 The formal definition is basically the opposite of orientability: it's a property of a surface where you can't consistently define clockwise and counterclockwise. If you try assigning normals like on an orientable surface, when you get back to your starting point the vector will be pointing in the opposite direction. Or, if a 2D object travels along a non-orientable surface, it will return mirrored.
 
@@ -52,11 +52,10 @@ Alternatively, a Klein bottle can be constructed via the sophisticated, rigorous
 Let's do a quick rundown of some amusing, fascinating facts about Klein bottles:
 - one-sided surface
 - zero edges
-- zero volume (perfect for alcohol)
-- 2D manifold immersed in 3 dimensions for us lowly humans to observe (see below), but can only be embedded in 4 dimensions
-- composed of two mirror-image möbius strips glued together
+- zero volume (perfect for consuming technically zero alcohol)
+- 2D manifold immersed in 3 dimensions for us lowly humans to observe, but can only be embedded in 4 dimensions
+- composed of two mirror-image Möbius strips glued together
 - pretty easy to fill, almost impossible to empty
-- Y2K compliant ✓
 - Euler characteristic of 0, given by vertices - edges + faces
 - genus of 1, loosely meaning it has one hole
 - non-orientable genus of 2
@@ -83,7 +82,7 @@ Of course, since this parametrization has 3 variables, it represents an **immers
 
 This particular immersion of a Klein bottle is pretty ugly, but that's okay, because there are many others. There are 3 common forms a Klein bottle takes in $\mathbb{R}^3$: the classic "bottle" shape, the right-handed and left-handed figure-8 immersions (which are *chiral*), and a pinched torus.  
 
-DRAWING OF KLEIN BOTTLE "FLAVORS"  
+![flavors](/assets/images/flavors.png){:width="90%"}
 
 You might notice the parametric equations above are functions of $u$ and $v$ rather than $x$ and $y$: this indicates a **change in variables**, meaning we've taken the domain of some function and transformed it into another coordinate system that makes the domain of that function much nicer to look at. You're probably pretty familiar with this general concept: $u$ substitution for integration and differentiation are examples of change of variables. Some other useful changes in variables include transformations into polar coordinates for 2d and cylindrical or spherical coordinates for 3d. This is common when writing equations to describe topological spaces, since they're so strange looking, and usually composed of surfaces of revolution.   
 
